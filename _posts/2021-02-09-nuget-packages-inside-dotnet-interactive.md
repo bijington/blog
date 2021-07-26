@@ -1,5 +1,5 @@
 ---
-title: Using dotnet interactive inside VS Code
+title: NuGet packages inside dotnet interactive
 keywords: "C#,dotnet-interactive,visual studio code,dotnet,nuget"
 ---
 # NuGet packages inside dotnet interactive
