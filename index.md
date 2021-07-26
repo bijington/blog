@@ -1,7 +1,3 @@
-# Title
-
-## Subtitle
-
 ---
 layout: default
 ---
