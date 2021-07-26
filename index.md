@@ -1,3 +1,4 @@
+Welcome to my blog post
 
 <div class="posts">
   {% for post in paginator.posts %}
