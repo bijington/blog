@@ -1,3 +1,7 @@
+---
+title: Detecting background audio in an iOS app
+keywords: "ios, development, mobile, xamarin, xamarin.forms"
+---
 # Detecting background audio in an iOS app
 
 Recently we launched our brand new, all `Xamarin.Forms` game: **[Super Wordsearch](https://www.superwordsearch.com/)**. To make the game more enjoyable we've added some background music for you to listen to while you are playing.
