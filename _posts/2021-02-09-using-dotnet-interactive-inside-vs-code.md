@@ -1,8 +1,8 @@
 ---
-title: NuGet packages inside dotnet interactive
+title: Using dotnet interactive inside VS Code
 keywords: "C#,dotnet-interactive,visual studio code,dotnet"
 ---
-# NuGet packages inside dotnet interactive
+# Using dotnet interactive inside VS Code
 
 I try to be a strict note taker throughout my day-to-day work life. Whether those are minute from a meeting or recording the results of an investigation. I have been using markdown for this purpose as it is lightweight and I can easily follow the syntax to achieve an outcome that I desire.
 
