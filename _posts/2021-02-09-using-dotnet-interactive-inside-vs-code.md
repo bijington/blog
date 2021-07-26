@@ -1,3 +1,9 @@
+---
+title: Using dotnet interactive inside VS Code
+keywords: "C#,dotnet-interactive,visual studio code,dotnet"
+---
+# Using dotnet interactive inside VS Code
+
 I try to be a strict note taker throughout my day-to-day work life. Whether those are minute from a meeting or recording the results of an investigation. I have been using markdown for this purpose as it is lightweight and I can easily follow the syntax to achieve an outcome that I desire.
 
 More recently I have found that I tend to record/calculate results or have to dig quite deep in some code in order to investigate an issue. For this I have ended up writing no end of Console applications. While it works and can be easy to debug for relatively straightforward code investigations it can be a pain to setup. I have always like the concept of Jupiter notebooks but never bothered to set it up.
