@@ -11,7 +11,6 @@ Thankfully the solution is pretty straight-forward as we will see in a little bi
 Apple provide the ability to detect if audio is already playing through their AVAudioSession class and more specifically the isOtherAudioPlaying property.
 
 Now lets take a look at this in action:
-Xamarin.Forms
 
 To allow this to used within our shared code we created an interface:
 
