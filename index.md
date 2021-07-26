@@ -1,4 +1,4 @@
-Welcome to my blog post
+# Welcome
 
 ---
 layout: default
