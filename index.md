@@ -1,5 +1,9 @@
 Welcome to my blog post
 
+---
+layout: default
+---
+
 <div class="posts">
   {% for post in paginator.posts %}
     <article class="post">
