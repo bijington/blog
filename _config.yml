@@ -18,13 +18,39 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Bijington's Blog
+name: Bijingtons Blog
+title: Bijingtons Blog
 description: >- # this means to ignore newlines until "baseurl:"
   I am a developer working in all things .NET
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.bijington.com" # the base hostname & protocol for your site, e.g. http://example.com
+keywords:       "technology, development, mobile, xamarin, .net, dotnet"
+explicit:       "no"
+author: Shaun Lawrence
+
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email: 
+  facebook:
+  flickr:
+  github: bijington
+  instagram:
+  linkedin: 
+  pinterest:
+  rss: 
+  twitter: bijington
+  stackoverflow: 
+  youtube: # channel/<your_long_string> or user/<user-name>
+  googleplus: # anything in your profile username that comes after plus.google.com/
+  playconsole:
+  
+# social
 twitter_username: bijington
 github_username:  bijington
+
+
 markdown: kramdown
 highlighter: rouge
 
