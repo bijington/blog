@@ -1,5 +1,6 @@
 ---
 title: My experience with contributing to Open Source
+keywords: "open source, development, mobile, xamarin, contribution"
 ---
 # My experience with contributing to Open Source
 
