@@ -12,6 +12,7 @@ The steps to setting your tooling up are pretty simple:
 
 Once set up you can easily get going by creating sections of code or markdown.
 
-![images/using-dotnet-interactive.png]
+![using-dotnet-interactive.png]
+(https://blog.bijington.com/images/using-dotnet-interactive.png)
 
 Pretty cool right?
