@@ -1,7 +1,3 @@
-# Title
-
-## Subtitle
-
 <ul>
    {% for post in site.posts %}
      <li>
