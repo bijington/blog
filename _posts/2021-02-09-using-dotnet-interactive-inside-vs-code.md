@@ -12,4 +12,6 @@ The steps to setting your tooling up are pretty simple:
 
 Once set up you can easily get going by creating sections of code or markdown.
 
+![images/using-dotnet-interactive.png]
+
 Pretty cool right?
