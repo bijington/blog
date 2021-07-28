@@ -22,16 +22,38 @@ I would like to propose an alternative. There are a few steps:
 ## 1. Create a common `static partial class` to remove the need for `#if`
 
 ```csharp
-public static partial class CustomHandlerRegistrar
+namespace MyFirstMauiApplication
 {
-    public static void Register(IMauiHandlersCollection handlers) =>
-        RegisterHandlers(handlers);
+    public static partial class CustomHandlerRegistrar
+    {
+        public static void Register(IMauiHandlersCollection handlers) =>
+            RegisterHandlers(handlers);
 
-    public static partial RegisterHandlers(IMauiHandlersCollection handlers);
+        public static partial RegisterHandlers(IMauiHandlersCollection handlers);
+    }
 }
 ```
 
-## 2. Remove the `#if` from `Startup.cs`
+## 2. Implement the required parts in your platform specific code
+
+You will need to create a class in each platform **AND make sure that the namespace matches that of the original** `CustomHandlerRegistrar`.
+
+```csharp
+namespace MyFirstMauiApplication
+{
+    public static partial class CustomHandlerRegistrar
+    {
+        public static partial RegisterHandlers(IMauiHandlersCollection handlers)
+        {
+            handlers.AddHandler(typeof(CustomEntry), typeof(CustomEntryHandler));
+        }
+    }
+}
+```
+
+## 3. Remove the `#if` from `Startup.cs`
+
+This then results in a much cleaner looking `Startup.cs` file.
 
 ```csharp
 appBuilder
@@ -39,16 +61,4 @@ appBuilder
     .ConfigureMauiHandlers(handlers => CustomHandlerRegistrar.Register(handlers));
 ```
 
-## 3. Implement the required parts in your platform specific code
-
-You will need to create a class in each platform **AND make sure that the namespace matches that of the original** `CustomHandlerRegistrar`.
-
-```csharp
-public static partial class CustomHandlerRegistrar
-{
-    public static partial RegisterHandlers(IMauiHandlersCollection handlers)
-    {
-        handlers.AddHandler(typeof(CustomEntry), typeof(CustomEntryHandler));
-    }
-}
-```
+`#maui`, `#dotnet`
