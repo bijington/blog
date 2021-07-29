@@ -1,8 +1,8 @@
 # Bijingtons Blog
 
-<dl>
+<div>
   {% for post in site.posts %}
-    <dd>
+    <article class="post">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       <div>
         <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
@@ -17,6 +17,6 @@
           <code class="language-plaintext highlighter-rouge">{{tag}}, </code>
         {% endfor %}
       </p>
-    </dd>
+    </article>
   {% endfor %}
-</dl>
+</div>

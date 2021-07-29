@@ -1,0 +1,16 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.post h2{
+    text-align: center;
+    font-weight: bold;
+    font-kerning: auto;
+    font-feature-settings: "kern","liga","dlig","hlig","cswh";
+    line-height: 1.2;
+  }
+  
+  .post_date{
+    text-align: center;
+  }
