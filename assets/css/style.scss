@@ -17,8 +17,11 @@ section {
 }
 
 .posts {
+    text-align: justify;
+}
+
+.read_more {
     text-align: center;
-    
 }
 
 .post h2{
@@ -30,6 +33,5 @@ section {
 }
 
 .post_date{
-    text-align: center;
-    color: #FF0000;
+    text-align: right;
 }
