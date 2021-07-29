@@ -6,6 +6,7 @@ tags:
     - "dotnet"
     - "dotnet-interactive"
     - "visual studio code"
+categories: [dotnet,dotnet-interactive]
 ---
 I try to be a strict note taker throughout my day-to-day work life. Whether those are minute from a meeting or recording the results of an investigation. I have been using markdown for this purpose as it is lightweight and I can easily follow the syntax to achieve an outcome that I desire.
 
