@@ -10,7 +10,7 @@
         {{ post.excerpt }}
       </div>
       
-      <small class="read_more"><a href="{{ post.url }}">READ MORE</a></small>
+      <div class="read_more"><a href="{{ post.url }}">READ MORE</a></div>
 
       <p>
         <div>
