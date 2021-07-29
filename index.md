@@ -11,6 +11,8 @@
       <div class="entry">
         {{ post.excerpt }}
       </div>
+      
+      <small><a href="{{ post.url }}">READ MORE</a></small>
 
       <p>
         {% for tag in post.tags %}
