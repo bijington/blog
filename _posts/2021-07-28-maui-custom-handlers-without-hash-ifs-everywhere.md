@@ -1,6 +1,11 @@
 ---
 title: Maui custom handlers without hash ifs everywhere
+date: 2021-07-28  00:00:00 +0000
 keywords: "C#,maui,dotnet"
+tags:
+    - "maui"
+    - "dotnet"
+    - "C#"
 ---
 # Maui custom handlers without hash ifs everywhere
 

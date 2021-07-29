@@ -3,6 +3,7 @@ title: Using dotnet interactive inside VS Code
 keywords: "C#,dotnet-interactive,visual studio code,dotnet"
 tags:
     - "dotnet"
+    - "dotnet-interactive"
     - "visual studio code"
 ---
 # Using dotnet interactive inside VS Code
