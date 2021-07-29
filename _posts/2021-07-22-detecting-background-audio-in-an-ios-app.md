@@ -1,6 +1,13 @@
 ---
 title: Detecting background audio in an iOS app
+date: 2021-07-22  00:00:00 +0000
 keywords: "ios, development, mobile, xamarin, xamarin.forms"
+tags:
+    - "ios"
+    - "development"
+    - "mobile"
+    - "xamarin"
+    - "xamarin.forms"
 ---
 # Detecting background audio in an iOS app
 

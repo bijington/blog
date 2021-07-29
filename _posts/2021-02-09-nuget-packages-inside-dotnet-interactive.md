@@ -1,6 +1,13 @@
 ---
 title: NuGet packages inside dotnet interactive
+date: 2021-02-09  00:00:00 +0000
 keywords: "C#,dotnet-interactive,visual studio code,dotnet,nuget"
+tags:
+    - "C#"
+    - "dotnet"
+    - "dotnet-interactive"
+    - "nuget"
+    - "visual studio code"
 ---
 # NuGet packages inside dotnet interactive
 

@@ -1,5 +1,6 @@
 ---
 title: Using dotnet interactive inside VS Code
+date: 2021-02-09  00:00:00 +0000
 keywords: "C#,dotnet-interactive,visual studio code,dotnet"
 tags:
     - "dotnet"

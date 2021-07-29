@@ -1,6 +1,13 @@
 ---
 title: My experience with contributing to Open Source
+date: 2021-04-26  00:00:00 +0000
 keywords: "open source, development, mobile, xamarin, contribution"
+tags:
+    - "contribution"
+    - "development"
+    - "mobile"
+    - "open source"
+    - "xamarin"
 ---
 # My experience with contributing to Open Source
 
