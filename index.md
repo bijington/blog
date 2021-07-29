@@ -4,7 +4,7 @@
   {% for post in site.posts %}
     <article class="post">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <div class="post_date">{{ post.date | date: "%B %e, %Y" }}</div>
+      <small class="post_date">{{ post.date | date: "%B %e, %Y" }}</small>
       
       <div class="entry">
         {{ post.excerpt }}
