@@ -4,7 +4,8 @@
   {% for post in site.posts %}
     <article class="post">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-
+      <div class="post_date">{{ post.date | date: "%B %e, %Y" }}</div>
+      
       <div class="entry">
         {{ post.excerpt }}
       </div>
@@ -17,8 +18,6 @@
             <code class="language-plaintext highlighter-rouge">{{tag}}, </code>
           {% endfor %}
         </div>
-      
-        <div class="post_date">{{ post.date | date: "%B %e, %Y" }}</div>
       </p>
       
 
