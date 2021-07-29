@@ -9,8 +9,6 @@ tags:
     - "open source"
     - "xamarin"
 ---
-# My experience with contributing to Open Source
-
 I have recently entered the world of contributing to Open Source. It was such a great experience that I feel I need to share it with you. To be clear, I have run my own Open Source project for a number of years but this has been to support my own needs with the option of allowing others to use it. It was only in 2021 that I have contributed to others.
 
 I hadn’t initially planned to but I noticed a tweet asking for help and it just triggered something in me to want to help:

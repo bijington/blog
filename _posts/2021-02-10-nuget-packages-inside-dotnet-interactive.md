@@ -9,8 +9,6 @@ tags:
     - "nuget"
     - "visual studio code"
 ---
-# NuGet packages inside dotnet interactive
-
 Following on from a previous post on using dotnet interactive inside vs code we can dig a little deeper in to some more useful functionality. We all need to consume NuGet packages right? I know I certainly do. 
 
 It is entirely possible to pull a package down and starting coding against that package. I use this feature a lot for diagnosing or testing things out with my own OSS library hosted via NuGet.

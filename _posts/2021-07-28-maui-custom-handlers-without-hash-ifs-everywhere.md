@@ -7,8 +7,6 @@ tags:
     - "dotnet"
     - "maui"
 ---
-# Maui custom handlers without hash ifs everywhere
-
 I don't know about you but I really do not like having `#if` definitions dotted around all over my codebase and I try my best to avoid it where I can. Currently a mechanism to configure new custom handlers within MAUI can require you to make use of the `#if` statement as seen below:
 
 ```csharp
