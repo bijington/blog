@@ -19,6 +19,8 @@
           <code class="language-plaintext highlighter-rouge">{{tag}}, </code>
         {% endfor %}
       </p>
+      
+      <hr>
     </article>
   {% endfor %}
 </div>
