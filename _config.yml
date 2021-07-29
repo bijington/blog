@@ -79,4 +79,4 @@ exclude:
   - README.md
   - CNAME
 
-theme: jekyll-theme-slate
+theme: jekyll-theme-minimal
