@@ -1,9 +1,9 @@
 # Bijingtons Blog
 
-<ul>
+<dl>
   {% for post in site.posts %}
-    <li>
-      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <dd>
+      <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
       <div>
         <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
       </div>
@@ -12,6 +12,6 @@
           <code class="language-plaintext highlighter-rouge">{{tag}}, </code>
         {% endfor %}
       </p>
-    </li>
+    </dd>
   {% endfor %}
-</ul>
+</dl>
