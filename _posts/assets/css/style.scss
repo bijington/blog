@@ -3,6 +3,14 @@
 
 @import "{{ site.theme }}";
 
+header {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
 .posts {
     text-align: center;
     
