@@ -39,7 +39,7 @@ namespace MyNamespace.iOS
   public class AudioHelper : IAudioHelper  
   {  
     public bool IsOtherAudioPlaying => 
-      AVAudioSession.SharedInstance.IsOtherAudioPlaying;  
+      AVAudioSession.SharedInstance().OtherAudioPlaying;  
   }  
 }
 ```
