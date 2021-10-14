@@ -8,7 +8,7 @@ tags:
     - "xamarin.forms"
 categories: [C#, xamarin, xamarin.forms]
 ---
-I recently gave a talk on [building a mobile game in Xamarin.Forms](https://www.youtube.com/watch?app=desktop&v=xBc08chqon8) and as part of the talk I prepared a demo application to help show off some of the concepts that we used to build our own game.
+I was recently given the opportunity to talk about [building a mobile game in Xamarin.Forms](https://www.youtube.com/watch?app=desktop&v=xBc08chqon8) and as part of the talk I prepared a demo application to help show off some of the concepts that we used to build our own game.
 
 The aim of this blog series is to guide you through that demo application and talk over some of the concepts that we applied in order to structure our code.
 
