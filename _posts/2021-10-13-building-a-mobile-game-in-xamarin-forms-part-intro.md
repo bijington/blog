@@ -1,5 +1,5 @@
 ---
-title: Building a mobile game in Xamarin Forms (Introduction)
+title: Building a mobile game in Xamarin Forms - Introduction
 date: 2021-10-13  00:00:00 +0000
 keywords: "C#,xamarin,xamarin.forms"
 tags:
@@ -12,12 +12,17 @@ I recently gave a talk on [building a mobile game in Xamarin.Forms](https://www.
 
 The aim of this blog series is to guide you through that demo application and talk over some of the concepts that we applied in order to structure our code.
 
-With the result at end of this series looking like:
+This series will take us from the initial example app:
+
+![starting point](/images/2021-10-13-building-a-mobile-game-in-xamarin-forms-part-intro/app-starting-point.png)
+
+And show how we can build a game that provides some great visual feedback to our users.
+
 ![result](/images/2021-10-13-building-a-mobile-game-in-xamarin-forms-part-intro/result.gif)
 
 The aim is to provide beginner through to more advanced concepts and will be broken down to the following sections:
 
-1. [Creating the application](2021/10/13/building-a-mobile-game-in-xamarin-forms-part-one.html)
+1. [Creating the application]({% post_url 2021-10-13-building-a-mobile-game-in-xamarin-forms-part-one %})
 2. Data layer (repository pattern) - TUNE IN NEXT WEEK
 3. Styling / resources - COMING SOON
 4. MVVM setup - COMING SOON
