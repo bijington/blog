@@ -12,13 +12,11 @@ I recently gave a talk on [building a mobile game in Xamarin.Forms](https://www.
 
 The aim of this blog series is to guide you through that demo application and talk over some of the concepts that we applied in order to structure our code.
 
-This series will take us from the initial example app:
+This series will take us:
 
-![starting point](/images/2021-10-13-building-a-mobile-game-in-xamarin-forms-part-intro/app-starting-point.png)
-
-And show how we can build a game that provides some great visual feedback to our users.
-
-![result](/images/2021-10-13-building-a-mobile-game-in-xamarin-forms-part-intro/result.gif)
+From this default app             |  To this
+:-------------------------:|:-------------------------:
+![starting point](/images/2021-10-13-building-a-mobile-game-in-xamarin-forms-part-intro/app-starting-point.png)  |  ![result](/images/2021-10-13-building-a-mobile-game-in-xamarin-forms-part-intro/result.gif))
 
 The aim is to provide beginner through to more advanced concepts and will be broken down to the following sections:
 
