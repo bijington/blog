@@ -16,7 +16,7 @@ This series will take us:
 
 From this default app             |  To this
 :-------------------------:|:-------------------------:
-![starting point](/images/2021-10-13-building-a-mobile-game-in-xamarin-forms-part-intro/app-starting-point.png)  |  ![result](/images/2021-10-13-building-a-mobile-game-in-xamarin-forms-part-intro/result.gif))
+![starting point](/images/2021-10-13-building-a-mobile-game-in-xamarin-forms-part-intro/app-starting-point.png)  |  ![result](/images/2021-10-13-building-a-mobile-game-in-xamarin-forms-part-intro/result.gif)
 
 The aim is to provide beginner through to more advanced concepts and will be broken down to the following sections:
 
