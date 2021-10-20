@@ -223,3 +223,7 @@ I hope that by building and then swapping between implementations in this post y
 
 
 This will now serve as the basis for our next step in this series Styling / resources
+
+And finally the source for the end of this stage can be found at:
+
+[https://github.com/bijington/mobile-game-xamarin-forms/tree/part-one-creating-the-application](https://github.com/bijington/mobile-game-xamarin-forms/tree/part-one-creating-the-application)
