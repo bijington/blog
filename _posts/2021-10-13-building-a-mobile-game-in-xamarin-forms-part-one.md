@@ -52,7 +52,7 @@ If we run the app up we should see something like:
 
 ![app starting point](/images/2021-10-13-building-a-mobile-game-in-xamarin-forms-part-one/app-starting-point.png)
 
-This will now serve as the basis for our next step in this series Data layer (repository pattern) - COMING SOON
+This will now serve as the basis for our next step in this series [Data layer]({% post_url 2021-10-13-building-a-mobile-game-in-xamarin-forms-part-two %})
 
 And finally the source for the end of this stage can be found at:
 
