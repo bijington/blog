@@ -220,3 +220,6 @@ IShapeRepository shapeRepository = new ShapeRepository();
 ## Conclusion
 
 I hope that by building and then swapping between implementations in this post you can see the value in keeping all of the loading logic contained within a repository.
+
+
+This will now serve as the basis for our next step in this series Styling / resources

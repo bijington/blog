@@ -21,7 +21,7 @@ From this default app             |  To this
 The aim is to provide beginner through to more advanced concepts and will be broken down to the following sections:
 
 1. [Creating the application]({% post_url 2021-10-13-building-a-mobile-game-in-xamarin-forms-part-one %})
-2. [Data layer]({% post_url 2021-10-13-building-a-mobile-game-in-xamarin-forms-part-two %})
+2. [Data layer]({% post_url 2021-10-20-building-a-mobile-game-in-xamarin-forms-part-two %})
 3. Styling / resources - TUNE IN NEXT WEEK
 4. MVVM setup - COMING SOON
 5. BindableLayout - COMING SOON
