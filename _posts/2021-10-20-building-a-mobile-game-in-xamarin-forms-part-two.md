@@ -20,9 +20,9 @@ The repository pattern allows us to hide all the logic that deals with Creating,
 
 That is a little bit about the pattern we wish to use, next I would like to explain what we wish to achieve with that pattern. For our game we are going to want to **load** up a number of **shapes** and present them on the screen as tiles for the user to flip over and match. You can see that I have **emphasised** the key parts to what our implementation will need to do, so lets jump over to Visual Studio and start that process.
 
-Using the result from our previous post [Creating the Application]({% post_url 2021-10-13-building-a-mobile-game-in-xamarin-forms-part-one %}).
-
 ## Our implementation
+
+Using the result from our previous post [Creating the Application]({% post_url 2021-10-13-building-a-mobile-game-in-xamarin-forms-part-one %}).
 
 ### Models
 
@@ -219,11 +219,15 @@ IShapeRepository shapeRepository = new ShapeRepository();
 
 ## Conclusion
 
-I hope that by building and then swapping between implementations in this post you can see the value in keeping all of the loading logic contained within a repository.
+I hope that by building and then swapping between implementations in this post you can see the value in keeping all of the loading logic contained within a repository. 
+
+A more common scenario would be to have a repository implementation that loads/saves to a local database and I hope that this post will give you a good overview of how you could fit it within this repository pattern.
 
 
-This will now serve as the basis for our next step in this series Styling / resources
+## Links
+
+This will serve as the basis for our next step in this series **Styling / resources**
 
 And finally the source for the end of this stage can be found at:
 
-[https://github.com/bijington/mobile-game-xamarin-forms/tree/part-one-creating-the-application](https://github.com/bijington/mobile-game-xamarin-forms/tree/part-one-creating-the-application)
+[https://github.com/bijington/mobile-game-xamarin-forms/tree/part-two-data-layer](https://github.com/bijington/mobile-game-xamarin-forms/tree/part-two-data-layer)
