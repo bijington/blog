@@ -54,13 +54,13 @@ If we run the app up we should see something like:
 
 This will now serve as the basis for our next step in this series [Data layer]({% post_url 2021-10-20-building-a-mobile-game-in-xamarin-forms-part-two %})
 
-And finally the source for the end of this stage can be found at:
-
 ## Links
+
+The source for the end of this stage can be found at:
 
 [https://github.com/bijington/mobile-game-xamarin-forms/tree/part-one-creating-the-application](https://github.com/bijington/mobile-game-xamarin-forms/tree/part-one-creating-the-application)
 
 
 Previous             |  Next
 :-------------------------|-------------------------:
-[Introduction]({% post_url 2021-10-13-building-a-mobile-game-in-xamarin-forms-part-intro %}) | [Data layer]({% post_url 2021-10-20-building-a-mobile-game-in-xamarin-forms-part-two %})
+[{% icon fa-left-long %} Introduction]({% post_url 2021-10-13-building-a-mobile-game-in-xamarin-forms-part-intro %}) | [Data layer]({% post_url 2021-10-20-building-a-mobile-game-in-xamarin-forms-part-two %})
