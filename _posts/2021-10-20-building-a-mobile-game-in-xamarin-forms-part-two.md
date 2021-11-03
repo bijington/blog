@@ -233,4 +233,4 @@ The source for the end of this stage can be found at:
 
 Previous             |  Next
 :-------------------------|-------------------------:
-[Creating the application]({% post_url 2021-10-13-building-a-mobile-game-in-xamarin-forms-part-one %}) | [Styling / resources]({% post_url 2021-10-20-building-a-mobile-game-in-xamarin-forms-part-three %})
+[Creating the application]({% post_url 2021-10-13-building-a-mobile-game-in-xamarin-forms-part-one %}) | [Styling / resources]({% post_url 2021-11-03-building-a-mobile-game-in-xamarin-forms-part-three %})

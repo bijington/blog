@@ -22,7 +22,7 @@ The aim is to provide beginner through to more advanced concepts and will be bro
 
 1. [Creating the application]({% post_url 2021-10-13-building-a-mobile-game-in-xamarin-forms-part-one %})
 2. [Data layer]({% post_url 2021-10-20-building-a-mobile-game-in-xamarin-forms-part-two %})
-3. Styling / resources - TUNE IN NEXT WEEK
+3. [Styling / resources]({% post_url 2021-11-03-building-a-mobile-game-in-xamarin-forms-part-three %})
 4. MVVM setup - COMING SOON
 5. BindableLayout - COMING SOON
 6. Shapes/Paths + Converters - COMING SOON
