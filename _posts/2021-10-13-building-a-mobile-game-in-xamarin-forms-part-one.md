@@ -63,4 +63,4 @@ The source for the end of this stage can be found at:
 
 Previous             |  Next
 :-------------------------|-------------------------:
-[{% icon fa-left-long %} Introduction]({% post_url 2021-10-13-building-a-mobile-game-in-xamarin-forms-part-intro %}) | [Data layer]({% post_url 2021-10-20-building-a-mobile-game-in-xamarin-forms-part-two %})
+[Introduction]({% post_url 2021-10-13-building-a-mobile-game-in-xamarin-forms-part-intro %}) | [Data layer]({% post_url 2021-10-20-building-a-mobile-game-in-xamarin-forms-part-two %})

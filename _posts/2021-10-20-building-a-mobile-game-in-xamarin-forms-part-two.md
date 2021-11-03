@@ -226,8 +226,11 @@ A more common scenario would be to have a repository implementation that loads/s
 
 ## Links
 
-This will serve as the basis for our next step in this series **Styling / resources**
-
-And finally the source for the end of this stage can be found at:
+The source for the end of this stage can be found at:
 
 [https://github.com/bijington/mobile-game-xamarin-forms/tree/part-two-data-layer](https://github.com/bijington/mobile-game-xamarin-forms/tree/part-two-data-layer)
+
+
+Previous             |  Next
+:-------------------------|-------------------------:
+[Creating the application]({% post_url 2021-10-13-building-a-mobile-game-in-xamarin-forms-part-one %}) | [Styling / resources]({% post_url 2021-10-20-building-a-mobile-game-in-xamarin-forms-part-three %})
