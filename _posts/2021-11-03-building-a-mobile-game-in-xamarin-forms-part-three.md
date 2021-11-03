@@ -1,5 +1,5 @@
 ---
-title: Building a mobile game in Xamarin Forms - Styling / resources
+title: "Building a mobile game in Xamarin Forms - Styling / resources"
 date: 2021-11-03  00:00:00 +0000
 keywords: "C#,xamarin,xamarin.forms"
 tags:
