@@ -15,17 +15,17 @@ The fourth stop on our tour is MVVM.
 
 > The Model-View-ViewModel (MVVM) pattern helps to cleanly separate the business and presentation logic of an application from its user interface (UI). Maintaining a clean separation between application logic and the UI helps to address numerous development issues and can make an application easier to test, maintain, and evolve. It can also greatly improve code re-use opportunities and allows developers and UI designers to more easily collaborate when developing their respective parts of an app. [Further reading](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/enterprise-application-patterns/mvvm)
 
-For the purpose of this blog post we will be writing the key parts required to make MVVM work to help understand how it all pieces together. There are many frameworks out there that provide the boiler plate code for this so I typically use one of those in my more recent projects. One such framework is [MVVM Helpers](https://github.com/jamesmontemagno/mvvm-helpers).
+For the purpose of this blog post, we will be writing the key parts required to make MVVM work to help understand how it all pieces together. There are many frameworks out there that provide the boiler plate code for this, so I typically use one of those in my more recent projects. One such framework is [MVVM Helpers](https://github.com/jamesmontemagno/mvvm-helpers).
 
 The fundmentals of MVVM within Xamarin.Forms require that we write our UI and business logic separately and then allow them to interact through the use of [Bindings](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/data-binding/basic-bindings). The way that we provide the ability to interact is through the use of a key interface [`INotifyPropertyChanged`](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-5.0).
 
 ## MVVM in action
 
-Using the result of our previous post [Styling / resources]({% post_url 2021-11-03-building-a-mobile-game-in-xamarin-forms-part-three %}) we will start by creating a new folder under the root project. Lets call it `ViewModels`.
+Using the result of our previous post [Styling / resources]({% post_url 2021-11-03-building-a-mobile-game-in-xamarin-forms-part-three %}) we will start by creating a new folder under the root project. Let's call it `ViewModels`.
 
 ### Create our boilerplate code
 
-And then lets add a new class calling it `BaseViewModel` and make it implement `INotifyPropertyChanged`. This is where we are going to write our boilerplate code:
+And then let's add a new class calling it `BaseViewModel` and make it implement `INotifyPropertyChanged`. This is where we are going to write our boilerplate code:
 
 ```csharp
 using System.Collections.Generic;
@@ -56,7 +56,7 @@ public abstract class BaseViewModel : INotifyPropertyChanged
 }
 ```
 
-There is a bit more going on here than just implementing the interface so lets break it down:
+There is a bit more going on here than just implementing the interface so let's break it down:
 
 #### 1. `PropertyChanged`
 
@@ -65,7 +65,7 @@ This is the only part that you are required to implement with `INotifyPropertyCh
 public event PropertyChangedEventHandler PropertyChanged;
 ```
 
-Raising this will notify any subscribers that a property has changed. The event args included in the raise will tell the subscriber the name of the property that has changed, this ties in with bindings because we bind to specific property names.
+Raising this will notify any subscribers that a property has changed. The event args included in the raise will tell the subscriber the name of the property that has changed this ties in with bindings because we bind to specific property names.
 
 #### 2. `OnPropertyChanged`
 
@@ -99,9 +99,9 @@ Finally we return whether the value changed to allow the caller to do something 
 
 ### Create our first ViewModel
 
-Yes lets go ahead and create one! Lets call it `MainPageViewModel` and make it inherit from `BaseViewModel`, I like this naming convention because it should be clear that this `ViewModel` is going to interact with our `MainPage`. Of course not all ViewModels and Views have this one to one mapping but when they do it can help to make it clear.
+Yes let's go ahead and create one! Let's call it `MainPageViewModel` and make it inherit from `BaseViewModel`, I like this naming convention because it should be clear that this `ViewModel` will interact with our `MainPage`. Of course not all ViewModels and Views have this one-to-one mapping but when they do it can help to make it clear.
 
-Now that we have our ViewModel lets set it to the `BindingContext` of our View. I like to do this in the XAML itself but it can also be done in the code behind. Note that you only need to do one of these options.
+Now that we have our ViewModel let's set it to the `BindingContext` of our View. I like to do this in the XAML itself but it can also be done in the code behind. Note that you only need to do one of these options.
 
 ### Update our XAML
 
@@ -129,7 +129,7 @@ Next we will delete the entire contents on the `StackLayout` element so we can b
 </ContentPage>
 ```
 
-Now we have a set of things to add so lets following in an orderly fashion:
+Now we have a set of things to add so let's following in an orderly fashion:
 
 #### 1. Set the binding context
 
@@ -143,7 +143,7 @@ Then we can add the following as a child of the `ContentPage` element:
 
 #### 2. Add our UI content
 
-Inside the `StackLayout` lets add the following:
+Inside the `StackLayout` let's add the following:
 
 A `Label` to show how many correct guesses we have made:
 
@@ -174,15 +174,15 @@ You may notice that Visual Studio reports something like:
 
 ![Suggestion](/images/2021-11-10-building-a-mobile-game-in-xamarin-forms-part-four/suggestion.png) 
 
-It is pointing out that we haven't actually added these properties to our view model yet. Bindings try their best so if we were to build and run the app it would successfully compile and run but the `Button`s wouldn't do anything. I much prefer having compile time validation of whether things are not configured correctly. This is where [Compiled bindings](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings) come in. Not only do they provide us with the compile time validation but they also provide us with some performance benefits.
+It is worth pointing out that we haven't actually added these properties to our view model yet. Bindings try their best, so if we were to build and run the application it would successfully compile and run, but the `Button`s wouldn't do anything. I much prefer having compile-time validation of whether things are not configured correctly. This is where [Compiled bindings](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings) come in. Not only do they provide us with the compile-time validation, but they also provide us with some performance benefits.
 
-Lets turn this on, all we need to do is add this line to our `ContentPage` element:
+Let's turn this on, all we need to do is add this line to our `ContentPage` element:
 
 ```xml
 x:DataType="viewmodels:MainPageViewModel"
 ```
 
-Now if we try to compile our application it will fail reporting errors relating to properties not existing. Lets take a quick look at what the resulting `XAML` should look like in the `MainPage.xaml` file and then go and fix the errors:
+Now if we try to compile our application it will fail reporting errors relating to properties not existing. Let's take a quick look at what the resulting `XAML` should look like in the `MainPage.xaml` file and then go and fix the errors:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -217,7 +217,7 @@ Now if we try to compile our application it will fail reporting errors relating 
 
 ### Fix our View Model
 
-We have a good number of items to add here so we will do it step by step to hopefully make it easier to follow:
+We have a good number of items to add here, so we will do it step-by-step that will hopefully make it easier to follow:
 
 #### 1. GuessedCount property
 
@@ -298,7 +298,7 @@ private void OnGuess()
 
 This command will fire when the Guess `Button` is tapped and increment the `GuessedCount` property to show the user they did something.
 
-We should now have something that finally compiles and runs so lets try it out.
+We should now have something that finally compiles and runs so let's try it out.
 
 ![Application running](/images/2021-11-10-building-a-mobile-game-in-xamarin-forms-part-four/application.gif) 
 
@@ -306,7 +306,7 @@ We should now have something that finally compiles and runs so lets try it out.
 
 We have talked through the benefits of using MVVM and then applied it to our application. Admittedly we still have some view state information inside our view model but those will be removed in a later post.
 
-I hope that this has given a good overview of how a view and view model interact with each other and shown some practical examples of doing so. In our next post Bindable Layouts we will expose more complex interact with a collection of items to display on screen.
+I hope that this has given a good overview of how a view and view model interact with each other and shown some practical examples of doing so. In our next post Bindable Layouts we will expose more complex interact with a collection of items to display on
 
 ## Links
 
