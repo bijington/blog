@@ -171,4 +171,4 @@ The source for the end of this stage can be found at:
 
 Previous             |  Next
 :-------------------------|-------------------------:
-[Data layer]({% post_url 2021-10-20-building-a-mobile-game-in-xamarin-forms-part-two %}) | [MVVM setup]({% post_url 2021-11-03-building-a-mobile-game-in-xamarin-forms-part-four %})
+[Data layer]({% post_url 2021-10-20-building-a-mobile-game-in-xamarin-forms-part-two %}) | [MVVM setup]({% post_url 2021-11-10-building-a-mobile-game-in-xamarin-forms-part-four %})
