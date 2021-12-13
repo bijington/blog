@@ -318,4 +318,4 @@ The source for the end of this stage can be found at:
 
 Previous             |  Next
 :-------------------------|-------------------------:
-[Styling / resources]({% post_url 2021-11-03-building-a-mobile-game-in-xamarin-forms-part-three %}) | BindableLayout - COMING SOON
+[Styling / resources]({% post_url 2021-11-03-building-a-mobile-game-in-xamarin-forms-part-three %}) | [BindableLayout]({% post_url 2021-12-09-building-a-mobile-game-in-xamarin-forms-part-five %})
