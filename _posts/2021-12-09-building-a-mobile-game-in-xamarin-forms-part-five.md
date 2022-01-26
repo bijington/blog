@@ -397,4 +397,4 @@ The source for the end of this stage can be found at:
 
 Previous             |  Next
 :-------------------------|-------------------------:
-[MVVM Setup]({% post_url 2021-11-10-building-a-mobile-game-in-xamarin-forms-part-four %}) | Shapes/Paths + Converters - COMING SOON
+[MVVM Setup]({% post_url 2021-11-10-building-a-mobile-game-in-xamarin-forms-part-four %}) | [Shapes/Paths + Converters]({% post_url 2022-01-20-building-a-mobile-game-in-xamarin-forms-part-six %})
