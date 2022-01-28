@@ -1,6 +1,6 @@
 ---
 title: "Building a mobile game in Xamarin Forms - Shapes, Paths and Converters"
-date: 2021-12-09  00:00:00 +0000
+date: 2022-01-20  00:00:00 +0000
 keywords: "C#,xamarin,xamarin.forms,shapes,paths,converters"
 tags:
     - "C#"
