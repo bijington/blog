@@ -5,7 +5,7 @@
 
 header {
     display: block;
-    width: auto;
+    width: 100%;
     max-width: 860px;
 }
 
@@ -17,10 +17,6 @@ section {
     width: auto;
     max-width: 860px;
     padding-top: 25px;
-}
-
-.wrapper {
-    width: 100%;
 }
 
 nav {
