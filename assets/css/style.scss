@@ -4,7 +4,7 @@
 @import "{{ site.theme }}";
 
 header {
-    display: none;
+    display: block;
 }
 
 footer {
@@ -14,6 +14,7 @@ footer {
 section {
     width: auto;
     max-width: 860px;
+    padding-top: 25px;
 }
 
 .posts {
