@@ -15,6 +15,18 @@
   </head>
   <body>
     <div class="wrapper">
+      <header>
+        <div id="inner">
+            <div id="left">
+              <h3><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h3>
+            </div>
+            <div id="right">
+              <nav>
+                <a href="/">Home</a>
+              </nav>
+            </div>
+        </div>
+      </header>
       <!-- <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 

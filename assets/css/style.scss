@@ -4,7 +4,24 @@
 @import "{{ site.theme }}";
 
 header {
-    display: none;
+    display: block;
+    width: 100%;
+    max-width: 860px;
+    position: relative;
+}
+
+header h3 {
+    margin: 0px;
+}
+
+#left {
+    width: 50%;
+    float: left;
+}
+
+#right {
+    width: 50%;
+    float: left;
 }
 
 footer {
@@ -14,6 +31,20 @@ footer {
 section {
     width: auto;
     max-width: 860px;
+    padding-top: 25px;
+}
+
+nav {
+    float: right;
+    font-size: 18px;
+}
+
+nav a {
+    margin-left: 20px;
+    color: #333;
+    text-align: right;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .posts {
