@@ -172,4 +172,4 @@ For more possibilities for shapes/paths I would recommend looking over the [Micr
 
 Previous             |  Next
 :-------------------------|-------------------------:
-[MVVM Setup]({% post_url 2021-12-09-building-a-mobile-game-in-xamarin-forms-part-five %}) | Shapes/Paths + Converters - COMING SOON
+[BindableLayout]({% post_url 2021-12-09-building-a-mobile-game-in-xamarin-forms-part-five %}) | [Lottie]({% post_url 2021-02-17-building-a-mobile-game-in-xamarin-forms-part-seven %})
