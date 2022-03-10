@@ -22,7 +22,7 @@ Don't worry neither am I! Don’t get me wrong I think I have these great ideas,
 For our mobile game we are going to make use of the following pre-built animation from Lottie Files:
 
 -	Background
-https://lottiefiles.com/75758-background-sparkles
+[https://lottiefiles.com/75758-background-sparkles](https://lottiefiles.com/75758-background-sparkles)
 
 You will notice that the background animation does not match our colour scheme in the app. Thankfully Lottie Files also provides an editor that lets you change the colours and other elements. I have gone ahead and already edited this in Lottie Files. You can do the same or feel free to grab it from the repo here.
 
@@ -62,7 +62,7 @@ Next we need to go ahead and grab the NuGet package ready to show off our new fa
 6.	Select all projects
 7.	Click **Add**
 
-You should notice that a ReadMe.txt file is opened automatically, this gives a helpful way of seeing the possibilities that come with the package. We certainly won’t need to use it all at least for this scenario but I thoroughly recommend checking out the repository here https://github.com/Baseflow/LottieXamarin
+You should notice that a ReadMe.txt file is opened automatically, this gives a helpful way of seeing the possibilities that come with the package. We certainly won’t need to use it all at least for this scenario but I thoroughly recommend checking out the repository here [https://github.com/Baseflow/LottieXamarin](https://github.com/Baseflow/LottieXamarin)
 
 ### Render our background animation
 
