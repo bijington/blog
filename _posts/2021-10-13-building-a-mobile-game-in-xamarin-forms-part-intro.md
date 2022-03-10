@@ -26,6 +26,6 @@ The aim is to provide beginner through to more advanced concepts and will be bro
 4. [MVVM setup]({% post_url 2021-11-10-building-a-mobile-game-in-xamarin-forms-part-four %})
 5. [BindableLayout]({% post_url 2021-12-09-building-a-mobile-game-in-xamarin-forms-part-five %})
 6. [Shapes/Paths + Converters]({% post_url 2022-01-20-building-a-mobile-game-in-xamarin-forms-part-six %})
-7. Lottie - COMING SOON
+7. [Lottie]({% post_url 2022-03-10-building-a-mobile-game-in-xamarin-forms-part-seven %})
 8. Behaviors - COMING SOON
 9. Effects - COMING SOON
