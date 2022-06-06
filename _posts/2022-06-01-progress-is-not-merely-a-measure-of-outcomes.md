@@ -62,7 +62,7 @@ To continue along with that statement, progress can be:
 - doodling an idea
 - discussing an idea with a friend
 - doing nothing - in fact coming to the decision that nothing needs to be done is still valuable
-- contributing to a list of things that can be considered progress
+- contributing to a list of things that can be considered progress (this blog is open to PRs -> <https://github.com/bijington/blog>)
 - acknowledging the progress that others are making
 - asking for help
 
