@@ -82,6 +82,8 @@ I ripped out `MainPage` and created a new page called `GamePage` located under a
 </ContentPage>
 ```
 
+#### Update AppShell
+
 We will need to update our `AppShell.xaml` file to point to this new `GamePage` rather than the old `MainPage` that we just deleted, it should now look like:
 
 ```xaml
@@ -105,6 +107,8 @@ With the key changes being:
 - Added the `xmlns:pages="clr-namespace:DrawSomething.Pages"` namespace
 - Swapped the `ContentTemplate` from `local:MainPage` to `pages:GamePage`.
 
+#### Set the BindingContext
+
 We also need to set the `BindingContext` of our `GamePage`, I have opted for following best practices so we have two steps to follow:
 
 1. Open up GamePage.xaml.cs and modify the constructor to be:
@@ -118,7 +122,9 @@ public GamePage(GamePageViewModel gamePageViewModel)
 }
 ```
 
-2. Register our page and view model with the app builder so that `Shell` can create our page and it's dependencies. Open up `MauiProgram.cs` and add into the `CreateMauiApp` method:
+#### Register our implementations with DI
+
+2. Register our page and view model with the app builder so that `Shell` can create our page and its dependencies. Open up `MauiProgram.cs` and add into the `CreateMauiApp` method:
 
 ```csharp
 builder.Services.AddTransient<GamePage>();
@@ -187,10 +193,10 @@ public class DrawingSurface : GraphicsView, IDrawable
 }
 ```
 
-That's simple right? If only - now that we have a surface we need to add an implementation to handle the drawing of lines. We need to provide:
+That's simple right? If only - now that we have a surface, we need to add an implementation to handle the drawing of lines. We need to provide:
 
 1. Ability to set the color.
-1. Ability to set the line thickness (we don't set this in the app but the door is open for you).
+1. Ability to set the line thickness (we don't set this in the app, but the door is open for you).
 1. Track the users interaction to create their drawing content.
 1. Keep track of the users drawing content.
 1. Render the drawing content on screen.
@@ -381,6 +387,8 @@ The final part of our build is to add in the functionality to clear the surface 
 
 For this we first need to add the ability to perform these functions on the `DrawingSurface` and then link to them in the page.
 
+### Add the commands
+
 Let's open up our `DrawingSurface.cs` file and do that. We need to add:
 
 ```csharp
@@ -408,13 +416,17 @@ private void Clear()
 
 This looks a bit different to the other bindable properties we created so let's see what is going on:
 
-We have created a `ClearCommand` property that when execute will call the `Clear` method on our `DrawingSurface`. This is the opposite of the common interactions that we see with commands, usually the flow is from the source (view model) to the target (view), for example the `Button.Command` will call code in our view model. This is achieved by:
+We have created a `ClearCommand` property that when execute will call the `Clear` method on our `DrawingSurface`. This is the opposite of the common interactions that we see with commands, usually the flow is from the source (view model) to the target (view), for example the `Button.Command` will call code in our view model.
+
+Our approach is achieved by:
 
 - defining the default binding mode to be `BindingMode.OneWayToSource` - [further reading](https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/binding-mode).
 - only providing a `get` for our `ClearCommand` property.
 - calling `BindableProperty.CreateReadOnly` to create a read-only property.
 
 ##### > "I have opted to not implement the UndoCommand here but it would largely be a repeat of the ClearCommand implementation - perhaps you can give it a go? Or failing that check out the final source linked at the end."
+
+### Add the images
 
 For the icons on our buttons I used the following from Google Fonts:
 
@@ -436,6 +448,8 @@ To achieve this we need to:
 ```
 
 *You can add these into any `ItemGroup` already in the project file and I opted to include with the image related ones.*
+
+### Build the bottom toolbar
 
 Now that we have our images and the functionality in the `DrawingSurface` control we can add the `Button`s to work the magic. Inside our `GamePage.xaml` file we want to add the third rows contents as:
 
