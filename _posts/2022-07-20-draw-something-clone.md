@@ -176,9 +176,9 @@ namespace DrawSomething.Controls;
 public class DrawingSurface : GraphicsView, IDrawable
 {
     public DrawingSurface()
-	{
+    {
         Drawable = this;
-	}
+    }
 
     public void Draw(ICanvas canvas, RectF dirtyRect)
     {
