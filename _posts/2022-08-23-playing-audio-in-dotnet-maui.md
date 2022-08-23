@@ -30,7 +30,7 @@ This post currently focuses on item 1 in the list above however it is possible t
 
 In order to include our audio file in our .NET MAUI project we simply need to drop it in the *\Resources\Raw* folder. As you can see in the screenshot below
 
-![result](/images/2022-08-23-playing-audio-in-dotnet-maui/raw-resource.png)
+![Raw resources screenshot](/images/2022-08-23-playing-audio-in-dotnet-maui/raw-resource.png)
 
 ## Using the package
 
@@ -54,7 +54,7 @@ public class MusicPlayerPageViewModel
     public async Task Load()
     {
         // Load the audio stream from the application
-        Stream audioStream = await FileSystem.OpenAppPackageFileAsync(musicItem.Filename);
+        Stream audioStream = await FileSystem.OpenAppPackageFileAsync("ukelele.mp3");
 
         // Create the player
         audioPlayer = audioManager.CreatePlayer(audioStream);
@@ -62,7 +62,18 @@ public class MusicPlayerPageViewModel
 }
 ```
 
-Now that we have created our `audioPlayer` we can call `Play`, `Pause`, `Stop`, `Seek` on it as well as controlling things like the `Volume` and even the `Balance`.
+Now that we have created our `audioPlayer` we can call `Play`, `Pause`, `Stop`, `Seek` on it as well as controlling things like the `Volume` and even the `Balance`. e.g.
+
+```csharp
+public void Play()
+{
+    audioPlayer.Play();
+}
+```
+
+For a more in-depth example I thoroughly recommend checking out our [sample project](https://github.com/jfversluis/Plugin.Maui.Audio/tree/main/samples)
+
+![Audio playback sample page](/images/2022-08-23-playing-audio-in-dotnet-maui/audio-playback-sample.png)
 
 ## Tidying up after ourselves
 
