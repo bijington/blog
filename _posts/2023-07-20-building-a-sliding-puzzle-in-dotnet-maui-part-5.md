@@ -1,5 +1,5 @@
 ---
-title: "Building a sliding puzzle game in .NET MAUI - Part three"
+title: "Building a sliding puzzle game in .NET MAUI - Part five"
 date: 2023-07-03  00:00:00 +0000
 keywords: "C#,maui,games,MauiUiJuly"
 tags:
@@ -107,7 +107,7 @@ Inside the `<CollectionView>` element we can add the following:
 </CollectionView.ItemTemplate>
 ```
 
-Inside the `ItemTemplate` element we must make use of the `DataTemplate` element which allows us to define the type of data that this template will be representing. In our scenario this is our `Level` class that we created in part two.
+Inside the `ItemTemplate` element we must make use of the `DataTemplate` element which allows us to define the type of data that this template will be representing. In our scenario this is our `Level` class that we created in [part two]({% post_url 2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-2 %}).
 
 The remaining parts should look fairly familiar given the list that we created above defining what needed to be inside our view. We have a border, a title `Label` showing the name of the level, a subtitle `Label` showing the difficulty and preview of the level using our `SlidingTileGrid` control.
 
@@ -145,7 +145,7 @@ Routing.RegisterRoute(nameof(LevelSelectionPage), typeof(LevelSelectionPage));
 
 ## Navigating to our new page
 
-Our final change is to open up our *HomePage.xaml.cs* file and modify the `OnPlayButtonClicked` that we added in part three to the following:
+Our final change is to open up our *HomePage.xaml.cs* file and modify the `OnPlayButtonClicked` that we added in [part three]({% post_url 2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-3 %}) to the following:
 
 ```csharp
 async void OnPlayButtonClicked(object sender, EventArgs e)

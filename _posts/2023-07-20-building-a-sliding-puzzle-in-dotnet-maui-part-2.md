@@ -26,8 +26,8 @@ My daughters have kindly agreed to allow me to use their artwork as the main con
 
 Image             |  Image
 :-------------------------:|:-------------------------:
-![Cheetah](/images/2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-two/cheetah.png)  |  ![First](/images/2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-two/first.png)
-![Giraffe](/images/2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-two/giraffe.png)  |  ![Koala](/images/2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-two/koala.png)
+![Cheetah](/images/2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-2/cheetah.png)  |  ![First](/images/2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-2/first.png)
+![Giraffe](/images/2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-2/giraffe.png)  |  ![Koala](/images/2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-2/koala.png)
 
 Let's head over to Visual Studio and include these in our project. We should note that because we will be using the .NET MAUI Graphics APIs to load and draw these images we will want to include them as an **`EmbeddedResource`** in our project rather than the usual `MauiImage`.
 
@@ -119,11 +119,11 @@ namespace Puzzler;
 
 public class Level
 {
-	public string Name { get; init; }
+    public string Name { get; init; }
 
-	public string ImageName { get; init; }
+    public string ImageName { get; init; }
 
-	public LevelDifficulty Difficulty { get; init; }
+    public LevelDifficulty Difficulty { get; init; }
 }
 
 ```
@@ -151,11 +151,11 @@ namespace Puzzler;
 
 public class Context
 {
-	public ObservableCollection<Level> Levels { get; } = new ObservableCollection<Level>();
+    public ObservableCollection<Level> Levels { get; } = new ObservableCollection<Level>();
 
-	public Context()
-	{
-		Levels.Add(new Level { Name = "First", ImageName = "first.jpg", Difficulty = LevelDifficulty.Easy });
+    public Context()
+    {
+        Levels.Add(new Level { Name = "First", ImageName = "first.jpg", Difficulty = LevelDifficulty.Easy });
         Levels.Add(new Level { Name = "Cheetah", ImageName = "cheetah.jpg", Difficulty = LevelDifficulty.Easy });
         Levels.Add(new Level { Name = "Koala", ImageName = "koala.jpg", Difficulty = LevelDifficulty.Easy });
         Levels.Add(new Level { Name = "Giraffe", ImageName = "giraffe.jpg", Difficulty = LevelDifficulty.Easy });

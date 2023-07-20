@@ -30,7 +30,7 @@ I am not always the best when it comes to picking colours. Quite often I get tol
 
 Our color scheme is this trending palette:
 
-![Our chosen colour palette](/images/2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-one/palette.png)
+![Our chosen colour palette](/images/2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-1/palette.png)
 
 You can find the colour palette on the coolors website at: [https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557](https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557).
 

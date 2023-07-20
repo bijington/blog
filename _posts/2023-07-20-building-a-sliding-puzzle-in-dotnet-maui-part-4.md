@@ -1,5 +1,5 @@
 ---
-title: "Building a sliding puzzle game in .NET MAUI - Part three"
+title: "Building a sliding puzzle game in .NET MAUI - Part four"
 date: 2023-07-03  00:00:00 +0000
 keywords: "C#,maui,games,MauiUiJuly"
 tags:
@@ -148,7 +148,7 @@ We are going to have 2 main usages of our `SlidingTileGrid`; displaying a previe
 - Provide the ability to interact with the board via touch.
 - Provide completion logic.
 
-![Our application running in light mode](/images/2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-four/grid-sketch.png)
+![Our application running in light mode](/images/2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-4/grid-sketch.png)
 
 Let's start by creating the file and then proceeding to satisfy each of the above requirements.
 
@@ -417,7 +417,7 @@ protected override void OnSizeAllocated(double width, double height)
 
 ## Taking our application for a test drive
 
-Just like in part two there are no visual differences to the previous post so, if we run the application we will see the following pages based on whether we are running in light or dark mode.
+Just like in [part three]({% post_url 2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-3 %}) there are no visual differences so if we run the application we will see the following pages based on whether we are running in light or dark mode.
 
 Light mode             |  Dark mode
 :-------------------------:|:-------------------------:
