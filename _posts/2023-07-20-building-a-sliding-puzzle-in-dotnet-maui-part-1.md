@@ -1,6 +1,6 @@
 ---
 title: "Building a sliding puzzle game in .NET MAUI - Part one"
-date: 2023-07-03  00:00:00 +0000
+date: 2023-07-20  00:00:00 +0000
 keywords: "C#,maui,games,MauiUiJuly"
 tags:
     - "C#"
