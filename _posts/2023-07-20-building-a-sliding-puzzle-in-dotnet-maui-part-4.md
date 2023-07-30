@@ -9,7 +9,9 @@ tags:
     - "MauiUiJuly"
 ---
 
-*This post is part of the [MAUI UI July](https://goforgoldman.com/posts/maui-ui-july-23/) community series of blog posts and videos, hosted by Matt Goldman. Be sure to check out the other posts in this series!*
+*This post is part of the [Building a sliding puzzle game in .NET MAUI]({% post_url 2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-0 %}) series that is aimed at guiding you through building a simple sliding puzzle game in .NET MAUI.*
+
+*This post is also part of the [MAUI UI July](https://goforgoldman.com/posts/maui-ui-july-23/) community series of blog posts and videos, hosted by Matt Goldman. Be sure to check out the other posts in this series!*
 
 ## What we will be covering in this post
 
@@ -131,9 +133,9 @@ namespace Puzzler;
 
 public class EmptyTile : Tile
 {
-	public EmptyTile(PointF point, SizeF size, SizeF imageSize) : base(null, point, size, imageSize)
-	{
-	}
+    public EmptyTile(PointF point, SizeF size, SizeF imageSize) : base(null, point, size, imageSize)
+    {
+    }
 }
 ```
 
@@ -331,10 +333,10 @@ private void SlidingTileGrid_EndInteraction(object sender, TouchEventArgs e)
     }
 
     // Check if there is any empty tile location nextdoor.
-    MoveTile(matchingTile);
+    MoveTile(matchingTile, true);
 }
 
-private void MoveTile(Tile matchingTile)
+private void MoveTile(Tile matchingTile, bool checkForCompletion)
 {
     var distance = this.emptyTile.CurrentPosition.Distance(matchingTile.CurrentPosition);
 
@@ -346,8 +348,11 @@ private void MoveTile(Tile matchingTile)
 
         matchingTile.CurrentPosition = newPosition;
 
+        this.Invalidate();
+
         // Check to see if all tiles are in their correct positions.
-        if (this.tiles.All(t => t.CurrentPosition == t.DestinationPosition))
+        if (checkForCompletion &&
+            this.tiles.All(t => t.CurrentPosition == t.DestinationPosition))
         {
             this.Completed?.Invoke(this, EventArgs.Empty);
         }

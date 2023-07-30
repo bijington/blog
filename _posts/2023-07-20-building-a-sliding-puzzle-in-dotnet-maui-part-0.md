@@ -27,9 +27,8 @@ The posts in this series are broken down into manageable chunks where we can cle
 3. [Creating our home page]({% post_url 2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-3 %})
 4. [Creating our tile grid]({% post_url 2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-4 %})
 5. [Creating our level selection page]({% post_url 2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-5 %})
-6. Creating our game page - Coming soon
-7. Adding animations - Coming soon
-8. Finishing it off - Coming soon
+6. [Creating our game page]({% post_url 2023-07-29-building-a-sliding-puzzle-in-dotnet-maui-part-6 %})
+7. [Adding animations]({% post_url 2023-07-29-building-a-sliding-puzzle-in-dotnet-maui-part-7 %})
 
 ## Important points
 

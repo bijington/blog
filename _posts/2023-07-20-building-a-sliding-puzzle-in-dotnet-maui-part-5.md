@@ -9,7 +9,9 @@ tags:
     - "MauiUiJuly"
 ---
 
-*This post is part of the [MAUI UI July](https://goforgoldman.com/posts/maui-ui-july-23/) community series of blog posts and videos, hosted by Matt Goldman. Be sure to check out the other posts in this series!*
+*This post is part of the [Building a sliding puzzle game in .NET MAUI]({% post_url 2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-0 %}) series that is aimed at guiding you through building a simple sliding puzzle game in .NET MAUI.*
+
+*This post is also part of the [MAUI UI July](https://goforgoldman.com/posts/maui-ui-july-23/) community series of blog posts and videos, hosted by Matt Goldman. Be sure to check out the other posts in this series!*
 
 ## What we will be covering in this post
 
@@ -183,4 +185,4 @@ The source for the end of this stage can be found at:
 
 Previous             |  Next
 :-------------------------|-------------------------:
-[Creating our tile grid]({% post_url 2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-4 %}) | Creating our game page - Coming soon
+[Creating our tile grid]({% post_url 2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-4 %}) | [Creating our game page]({% post_url 2023-07-29-building-a-sliding-puzzle-in-dotnet-maui-part-6 %})
