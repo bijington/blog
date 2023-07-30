@@ -254,6 +254,28 @@ private void MoveTile(Tile matchingTile, bool checkForCompletion, bool animateMo
 
 If we are animating the movement (`animateMovement`) then we start to create our `Animation`, as I mentioned earlier the `Animation` class provides a mechanism to animate a single numerical value. In our scenario though we need to animate both our X and Y positions of a tile when it is sliding from its `oldPosition` to its `newPosition`. We can cheat a little here, the `Animation` class can contain child `Animation`s, so we are building an `Animation` to change the X property and a second one to change the Y property. We then commit the parent `Animation` which will result in both child animations running concurrently and provide us with a smooth sliding animation.
 
+Note that we will need to update the 2 places where we call `MoveTiles`:
+
+#### Inside the `SlidingTileGrid_EndInteraction` method
+
+We need to change the method call to:
+
+```csharp
+MoveTile(matchingTile, true, true);
+```
+
+This will account for our extra `animateMovement` parameter.
+
+#### Inside the `ShuffleTiles` method
+
+We need to change the method call to:
+
+```csharp
+MoveTile(possibleMovements[randomIndex], false, false);
+```
+
+This will account for our extra `animateMovement` parameter.
+
 ## Taking our application for a test drive
 
 If we run the application we will see the home page and then tapping on the play button will show following pages based on whether we are running in light or dark mode.

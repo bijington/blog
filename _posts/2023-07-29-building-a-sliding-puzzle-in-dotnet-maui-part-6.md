@@ -332,4 +332,4 @@ The source for the end of this stage can be found at:
 
 Previous             |  Next
 :-------------------------|-------------------------:
-[Creating our level selection page]({% post_url 2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-5 %}) | Creating our game page - Coming soon
+[Creating our level selection page]({% post_url 2023-07-20-building-a-sliding-puzzle-in-dotnet-maui-part-5 %}) | [Adding animations]({% post_url 2023-07-29-building-a-sliding-puzzle-in-dotnet-maui-part-7 %})
