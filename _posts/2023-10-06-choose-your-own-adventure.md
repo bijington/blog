@@ -9,6 +9,8 @@ tags:
     - "games"
 ---
 
+Wow! This was probably my most difficult talk! Embedding the content into a .NET MAUI application/game and allowing you to influence the content was a challenge. Thank you so much for participating!
+
 This post provides useful links in relation to the 'Choose your own adventure' talk.
 
 ## Introducing .NET MAUI Book
