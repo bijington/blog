@@ -365,6 +365,8 @@ canvas.FillEllipse(
 
 Hopefully the comments draw attention to what the code is doing. The key thing to note is that operations performed on the `canvas` are done so in a stack based manner so it is easy to stack up things like a `Transform` and `Rotation` to make the maths required to render text rotated around a set of axes pretty straightforward. It doesn't mean I didn't bash my head over the keyboard a large number of times working out why things didn't render in the right place though :D.
 
+I also want to draw attention to the line of code `canvas.FontColor = colors[colorIndex].ToBlackOrWhiteForText();` this is a really great extension method provided by the .NET MAUI Community Toolkit that enables us to choose a text colour between black and white which will have the highest contrast ratio to the supplied `Color` which is the background.
+
 The following image should hopefully help to provide some extra context into how we draw the segments.
 
 ![Path details](/images/2025-07-21-wheel-of-names/path-details.png)
