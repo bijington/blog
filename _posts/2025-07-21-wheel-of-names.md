@@ -550,3 +550,4 @@ That concludes this post. Let's take another look at the control in action.
 The final result of this can be found up on the [Wheel of name](https://github.com/bijington/wheel-of-names) repository.
 
 I hope this helps to show off what fun and creative things you can do with .NET MAUI. If you have a desire to get involve then please feel free to contribute to the repository or let me know what you are working on.
+ 
