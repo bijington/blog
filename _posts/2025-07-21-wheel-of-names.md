@@ -1,5 +1,5 @@
 ---
-title: "Creating a sprite editor"
+title: "Creating a Wheel of names clone"
 date: 2025-07-21  00:00:00 +0000
 keywords: "C#,maui,games,MauiUiJuly,MauiGraphics"
 tags:
@@ -195,11 +195,11 @@ private void NotifyCollectionChangedOnCollectionChanged(object? sender, NotifyCo
             throw new ArgumentOutOfRangeException();
     }
 
-    this.Invalidate();
+    this.UpdateNames(names);
 }
 ```
 
-Finally the call to `Invalidate` shouldn't come as a surprise based on the brief introduction that I gave - we use this to signal to the graphics layer that the control needs to be redrawn.
+Finally the call to `UpdateNames` will serve as a mechanism to signal to the graphics layer that the control needs to be redrawn. Don't worry we will add this method shortly.
 
 ### A way to trigger the wheel to spin
 
@@ -364,6 +364,12 @@ canvas.FillEllipse(
 ```
 
 Hopefully the comments draw attention to what the code is doing. The key thing to note is that operations performed on the `canvas` are done so in a stack based manner so it is easy to stack up things like a `Transform` and `Rotation` to make the maths required to render text rotated around a set of axes pretty straightforward. It doesn't mean I didn't bash my head over the keyboard a large number of times working out why things didn't render in the right place though :D.
+
+The following image should hopefully help to provide some extra context into how we draw the segments.
+
+![Path details](/images/2025-07-21-wheel-of-names/path-details.png)
+
+We can say that the bounds for our wheel or 'arc bounds' in the above image is the area in which we draw our arc and we pass these bounds in as the first 4 parameters to `AddArc`. Next we need to pass in an angle called `startAngle` in our diagram and code - this is initially 0 degrees so will render as you see in the image, then with each segment drawn we increment the value by the size of a segment angle (or the `angle` field in our code). Then we have to provide the `sweepAngle` and this is the angle in which to render the curve which is handily the size of a segment angle (or the `angle` field in our code). Finally we pass in whether to draw the arc clockwise or anti-clockwise.
 
 ### Spin our wheel
 
